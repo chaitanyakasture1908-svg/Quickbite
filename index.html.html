@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Quick Bite - College Canteen</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #fff8f0;
+        }
+        .navbar, footer {
+            background-color: #4b287f;
+        }
+        .hero {
+            background-color: #ff7043;
+            color: white;
+        }
+        .food-card {
+            border: none;
+            box-shadow: 0 3px 10px #0002;
+        }
+        .food-card img {
+            height: 150px;
+            object-fit: cover;
+        }
+        .price {
+            color: #e85d2a;
+            font-weight: bold;
+        }
+        .section-title {
+            color: #4b287f;
+            font-weight: bold;
+        }
+        .btn-order {
+            background-color: #ffc247;
+            border: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-dark">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">
+                <i class="bi bi-cup-hot-fill"></i>
+                Quick Bite
+            </a>
+            <div class="navbar-nav flex-row">
+                <a class="nav-link px-2" href="#home">Home</a>
+                <a class="nav-link px-2" href="#menu">Menu</a>
+                <a class="nav-link px-2" href="#how">How It Works</a>
+                <a class="nav-link px-2" href="#order">Order</a>
+            </div>
+        </div>
+    </nav>
+    <header id="home" class="hero text-center p-5">
+        <h1>Skip the queue. Order ahead!</h1>
+        <p class="lead">
+            Choose your food and collect it without waiting.
+        </p>
+        <a href="#menu" class="btn btn-order btn-lg">
+            View Menu
+        </a>
+    </header>
+    <section id="menu" class="container py-5">
+        <h2 class="section-title text-center">
+            Today's Menu
+        </h2>
+        <p class="text-center text-muted">
+            Select your favourite food.
+        </p>
+        <div class="row g-4">
+            <div class="col-6 col-lg-3">
+                <div class="card food-card h-100 text-center">
+                    <img src="https://knockit.live/food_item_images/Sandwich%281%29.jpeg"
+                         class="card-img-top"
+                         alt="Veg Sandwich">
+                    <div class="card-body">
+                        <h5>Veg Sandwich</h5>
+                        <p class="price">₹40</p>
+                        <input type="number" class="form-control quantity"
+                               min="0" max="10" value="0">
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-lg-3">
+                <div class="card food-card h-100 text-center">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZz8vxBYZhoKxnS67sG7Npw2F2WDB4dGJ9NwU1RiF5KA&s=10"
+                         class="card-img-top"
+                         alt="Samosa">
+                    <div class="card-body">
+                        <h5>Samosa (2 pcs)</h5>
+                        <p class="price">₹20</p>
+                        <input type="number" class="form-control quantity"
+                               min="0" max="10" value="0">
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-lg-3">
+                <div class="card food-card h-100 text-center">
+                    <img src="https://img.republicworld.com/all_images/2026/05/1-1779196303089-file.jpeg"
+                         class="card-img-top"
+                         alt="Vada Pav">
+                    <div class="card-body">
+                        <h5>Vada Pav</h5>
+                        <p class="price">₹15</p>
+                        <input type="number" class="form-control quantity"
+                               min="0" max="10" value="0">
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-lg-3">
+                <div class="card food-card h-100 text-center">
+                    <img src="https://restoboxmauritius.com/assets/uploads/menus/menu_20260407_214122_81b9aa03.png"
+                         class="card-img-top"
+                         alt="Veg Biryani">
+                    <div class="card-body">
+                        <h5>Veg Biryani</h5>
+                        <p class="price">₹90</p>
+                        <input type="number" class="form-control quantity"
+                               min="0" max="10" value="0">
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-lg-3">
+                <div class="card food-card h-100 text-center">
+                    <img src="https://jaiindiankitchen.com/media/products/masala-dosa-jai-indian-kitchen.jpeg"
+                         class="card-img-top"
+                         alt="Masala Dosa">
+                    <div class="card-body">
+                        <h5>Masala Dosa</h5>
+                        <p class="price">₹60</p>
+                        <input type="number" class="form-control quantity"
+                               min="0" max="10" value="0">
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-lg-3">
+                <div class="card food-card h-100 text-center">
+                    <img src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy%2Cf_auto%2Cq_auto%2Cw_300%2Ch_300%2Ce_grayscale%2Cc_fit/FOOD_CATALOG/IMAGES/CMS/2025/2/16/dde749d2-67b2-42b8-a877-3fc05071dba3_2a5a1119-588e-451b-a939-07c438a97741.jpg"
+                         class="card-img-top"
+                         alt="Idli Sambar">
+                    <div class="card-body">
+                        <h5>Idli Sambar</h5>
+                        <p class="price">₹40</p>
+                        <input type="number" class="form-control quantity"
+                               min="0" max="10" value="0">
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-lg-3">
+                <div class="card food-card h-100 text-center">
+                    <img src="https://b.zmtcdn.com/data/dish_photos/f0f/01c37999c52a14299484f2e52addff0f.jpeg"
+                         class="card-img-top"
+                         alt="Masala Chai">
+                    <div class="card-body">
+                        <h5>Masala Chai</h5>
+                        <p class="price">₹12</p>
+                        <input type="number" class="form-control quantity"
+                               min="0" max="10" value="0">
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-lg-3">
+                <div class="card food-card h-100 text-center">
+                    <img src="https://pauljohncaffeine.com/cdn/shop/articles/iced-coffee-with-milk-1024x683.jpg?v=1779797366&width=1500"
+                         class="card-img-top"
+                         alt="Cold Coffee">
+                    <div class="card-body">
+                        <h5>Cold Coffee</h5>
+                        <p class="price">₹45</p>
+                        <input type="number" class="form-control quantity"
+                               min="0" max="10" value="0">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-center mt-4">
+            <h4>Total Amount: ₹0</h4>
+        </div>
+    </section>
+    <section id="how" class="container py-4">
+        <h2 class="section-title text-center mb-4">
+            How It Works
+        </h2>
+        <div class="row g-3 text-center">
+            <div class="col-6 col-md-3">
+                <div class="bg-success text-white p-3 rounded">
+                    <i class="bi bi-book fs-1"></i>
+                    <h5>1. Browse</h5>
+                    <p>See the menu</p>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="bg-success text-white p-3 rounded">
+                    <i class="bi bi-cart fs-1"></i>
+                    <h5>2. Choose</h5>
+                    <p>Select food</p>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="bg-success text-white p-3 rounded">
+                    <i class="bi bi-receipt fs-1"></i>
+                    <h5>3. Order</h5>
+                    <p>Enter details</p>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="bg-success text-white p-3 rounded">
+                    <i class="bi bi-check-circle fs-1"></i>
+                    <h5>4. Collect</h5>
+                    <p>Pick up food</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="order" class="container py-5">
+        <h2 class="section-title text-center mb-4">
+            Your Details
+        </h2>
+        <div class="row justify-content-center">
+            <div class="col-md-7 col-lg-5">
+                <div class="card shadow border-0 p-4">
+                    <form>
+                        <label class="form-label fw-bold">
+                            Name
+                        </label>
+                        <input type="text"
+                               class="form-control mb-3"
+                               placeholder="Your name"
+                               required>
+                        <label class="form-label fw-bold">
+                            Phone Number
+                        </label>
+                        <input type="tel"
+                               class="form-control mb-3"
+                               placeholder="Enter your phone number"
+                               pattern="[0-9]{10}"
+                               maxlength="10"
+                               required>
+                        <label class="form-label fw-bold">
+                            Pickup Time
+                        </label>
+                        <select class="form-select mb-3">
+                            <option>10:30 AM</option>
+                            <option>11:30 AM</option>
+                            <option>12:30 PM</option>
+                            <option>1:30 PM</option>
+                            <option>2:30 PM</option>
+                            <option>3:30 PM</option>
+                        </select>
+                        <label class="form-label fw-bold">
+                            Special Instructions
+                        </label>
+                        <input type="text"
+                               class="form-control mb-3"
+                               placeholder="Less spicy, no onion...">
+                        <button type="submit"
+                                class="btn btn-order btn-lg w-100">
+                            <i class="bi bi-bag-check"></i>
+                            Place Order
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="text-white text-center p-3">
+        <p class="mb-0">
+            <i class="bi bi-cup-hot-fill"></i>
+            Quick Bite - College Canteen Pre-Ordering System
+        </p>
+    </footer>
+</body>
+</html>
